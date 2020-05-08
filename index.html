@@ -2,26 +2,57 @@
 <html lang="pt-br">
     <head>
         <title>Flowers</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="utf-8">
     </head>
     <body>
-        <header>
-            
+        <header class="cabecalho">
+            <h1 class="logo">
+                <a href="index.html" title="Flowers"></a>
+            </h1>
+            <form method="post">
+                <input type="text" placeholder="faça uma busca">
+                <button>+</button>
+            </form>
         </header>
-        <section>
-            <nav>
+        <nav class="menu">
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="contato.html"> contato </a> </li>
+                <li> <a href="flores.html"> flores </a> </li>
+            </ul>
+        </nav>
+        <main class="principal">
+            <article class="sobre">
+                <h2>sobre Lorem Ipsus</h2>
+                <img src="img/logo.png" alt="erisen">
+                <p>What is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+                    What is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </article>
+            <aside class="onde-estamos">
+                <h2>Onde Estamos</h2>
+                <p>Em casa fique voce tambem</p>
+                <h2> contatos </h2>
                 <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="seila.html">SeiLa</a></li>
-                    <li><a href="caf.html">caf</a></li>
+                    <li> (21) 98238-8121 </li>
+                    <li> erisen.rholanda@gmail.com </li>
                 </ul>
-            </nav>
-            <article></article>
-            <aside></aside>
+            </aside>
+        </main>
+        <section class="newsletter">
+            <h3> Newsletter </h3>
+            <p> Receba nossas promoçoes por email </p>
+            <form method="post">
+                <input type="text" placeholder="Seu Nome">
+                <input type="email" placeholder="Seu Email">
+                <button> Cadastrar </button>
+            </form>
         </section>
-        <footer>
-            <a href="me.html">me veja!!!</a>
-            <p>Criado por Erisen Reis Holanda</p>
+        <footer class="rodape">
+            <p></p>
         </footer>
     </body>
 </html>

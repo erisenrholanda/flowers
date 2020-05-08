@@ -1,56 +1,159 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
+    font-size: 100%;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
 }
-body {
-    max-width: 1566px;
-    width: 100%;
-    font-family: italic sans-serif;
+img {
+    max-width: 100%;
 }
 ul {
     list-style: none;
-
 }
 a {
+    text-decoration: none;
+}
+h2 {
+    font-size: 1.5em;
     color: #333;
 }
-header {
-    width:100%;
+p {
+    font-size: 1em;
+    color: #777;
 }
-header img {
-    width:100%;
-}
-section nav {
-    top: 0%;
-    position: absolute;
+/* cabeçalho */
+.cabecalho {
     width: 100%;
-    height: 10%;
+    float: left;
+    padding: 50px 8%;
+    background-color: #13c7ae;
 }
-section nav ul {
-    background: rgb(255,0,0);
-    display: flex;
-    flex-direction: row;
-    position: static;
+.logo a {
+    width: 221px;
+    height: 48px;
+    float: left;
+    background: url(../img/logo.png);
 }
-section nav ul li {
-    padding: 1%;
-    width: 5%;
-    text-align: center;
+.cabecalho form {
+    width: 30%;
+    float: right;
 }
-section nav ul li:hover a{
-    color: rgb(255,0,0);
-    background: #333;
-
-    text-align: center;
-    padding: 10%;
-    transition: color 0.3s green easy-in-out, background 0.3 blue easy-in=out;
+.cabecalho input[type="text"] {
+    width: 85%;
+    float: left;
+    padding: 15px 10px;
+    border-radius: 5px 0 0 5px;
 }
-section nav ul li {
-    border: 1px black solid;
+.cabecalho button {
+    width: 15%;
+    float: right;
+    padding: 15px 10px;
+    background-color: #0cae98;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
 }
-section nav ul li a {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    padding: 0%;
+/* Menu */
+.menu {
+    width: 100%;
+    float: left;
+    background-color: #111;
+    padding: 18px 8%;
+}
+.menu li {
+    float: left;
+}
+.menu li a {
+    color: #9d9d9d;
+    margin-right: 25px;
+}
+.menu li a:hover {
+    color: #fff;
+}
+/* Social Icons */
+.social-icons {
+    float: right;
+}
+.social-icons a {
+    color: #fff;
+    float: left;
+    margin-left: 12px;
+}
+.principal {
+    width: 100%;
+    float: left;
+    padding: 20px 8%;
+}
+.sobre {
+    width: 70%;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+.sobre h2 {margin-bottom: 15px;}
+.sobre img {
+    width: 50%;
+    float: left;
+    border-radius: 5px;
+    margin: 0 15px 15px 0;
+}
+.sobre p {
+    text-align: justify;
+}
+/* sidebar */
+.onde-estamos {
+    width: 30%;
+    float: right;
+    padding: 10px 20px;
+    background-color:#f5f5f5;
+    border-radius: 5px;
+}
+.onde-estamos h2 {
+    margin-bottom: 5px;
+}
+.onde-estamos li {
+    color: #777;
+    margin-bottom: 10px;
+}
+.onde-estamos i {margin-right: 5px;}
+/*newsletter*/
+.newsletter {
+    width: 100%;
+    float: left;
+    background-color: #111;
+    padding: 50px 8%;
+}
+.newsletter h3 {
+    font-size: 1.8em;
+    color: #fff;
+}
+.newsletter p {
+    font-size: 1.2em;
+    color: #fff;
+}
+.newsletter form {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+.newsletter form input {
+    width: 40%;
+    margin-right: 1%;
+    padding: 15px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: initial;
+    float: left;
+}
+.newsletter button {
+    width: 18%;
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
 }
