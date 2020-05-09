@@ -54,6 +54,7 @@ p {
     background-color: #0cae98;
     color: #fff;
     cursor: pointer;
+    border: none;
     border-radius: 0 5px 5px 0;
 }
 /* Menu */
