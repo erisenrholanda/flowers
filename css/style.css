@@ -113,14 +113,39 @@ p {
     height: 35px;
 }
 .sectioncontato form fieldset #email {
-    width: 80%;
+    width: 70%;
     margin-right: 10%;
     padding: 15px;
+    margin: 0 auto;
+    left: 38px;
+    position: relative;
 }
-.sectioncontato form fieldset #txt {
-    margin-top: 35px;
+.sectioncontato form .text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    word-break: break-all;
+}
+.sectioncontato form .caixa-text {
     width: 70%;
-    height: 220px;
+    position: relative;
+    left: 41px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+.sectioncontato form .btn{
+    width: 75px;
+    height: 50px;
+    position: relative;
+    float: right;
+    margin-top: 6px;
+    right: 5px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px 1px #333;
 }
 .sectioncontato form fieldset label {
     margin: 1px solid black;
