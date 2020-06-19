@@ -2,6 +2,7 @@
 <html lang="pt-br">
     <head>
         <title>Flowers</title>
+        <link rel="icon" href="img/icon.jpg">
         <link rel="stylesheet" href="css/style.css">
         <meta charset="utf-8">
     </head>
@@ -23,21 +24,21 @@
             </ul>
         </nav>
         <section class="sectioncontato">
-            <form action="method">
+            <form action="index.html" method="post" name="formcontato">
                 <fieldset>
                     <legend>Identificação do usuario</legend>
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" class="name">
+                    <input type="text" id="nome" class="name" name="nome">
                     <label for="sobre">Sobrenome:</label>
-                    <input type="text" id="sobre" class="name">
+                    <input type="text" id="sobre" class="name" name="sobrenome">
                 </fieldset>
                 <fieldset>
                     <legend>informe</legend>
                     <label for="email">Informe Seu Email</label>
-                    <input type="email" id="email"><br>
-                    <label for="txt">Diga-nos como melhorar</label>
-                    <input type="text" id="txt">
-                    <button class="btn">Enviar</button>
+                    <input type="email" id="email" name="email"><br>
+                    <font-size class="text">diganos como melhorar</font-size>
+                    <textarea name="mensagem" class="caixa-text" cols="30" rows="10" placeholder="Criticas, elogios e feedback"></textarea>
+                    <button type="submit" onclick="return formContato()" class="btn">Enviar</button>
                 </fieldset>
             </form>
             <aside class="onde-estamos">
@@ -52,6 +53,7 @@
         </section>
         <footer class="rodape">
             <p>©Copyright | Todos os direitos reservados para Erisen Reis Holanda</p>
+            <script src="js/index.js"></script>
         </footer>
     </body>
 </html>

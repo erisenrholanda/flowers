@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="css/main.css">
         <meta charset="utf-8">
     </head>
-    <body>
+    <body onload="entrar()">
         <header class="cabecalho">
             <h1 class="logo">
                 <a href="index.html" title="Flowers"></a>
@@ -51,14 +51,15 @@
         <section class="newsletter">
             <h3> Newsletter </h3>
             <p> Receba nossas atualizações por email </p>
-            <form method="post">
-                <input type="text" placeholder="Seu Nome">
-                <input type="email" placeholder="Seu Email">
-                <button> Cadastrar </button>
+            <form method="post" name="formnewsletter">
+                <input type="text" name="nome" placeholder="Seu Nome">
+                <input type="email" name="email" placeholder="Seu Email">
+                <button type="submit" onclick="return validar()"> Cadastrar </button>
             </form>
         </section>
         <footer class="rodape">
             <p>©Copyright | Todos os direitos reservados para Erisen Reis Holanda</p>
+            <script src="js/index.js"></script>
         </footer>
     </body>
 </html>
