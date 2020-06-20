@@ -36,7 +36,7 @@ function validar() {
 //flores.html
 function trocarimagem() {
     var troca = document.getElementsByName("troca");
-    troca.src="img/rosa.jpg";
+    troca.src="img/rosa2.jpg";
 }
 //contato.html
 function formContato() {
