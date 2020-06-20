@@ -13,7 +13,7 @@ function validar() {
     var nome = formnewsletter.nome.value;
     var email = formnewsletter.email.value;
     if (nome != "" && email != "") {
-        var resposta = window.confirm("confirme se este é realmente o seu email: " + email)
+        var resposta = window.confirm("confirme se este é realmente o seu email: " + email);
         if (resposta == false) {
             alert("informe seu email novamente");
             formnewsletter.email.value = "";
@@ -22,14 +22,14 @@ function validar() {
         }
         alert ("Muito obrigado " + nome + " fique de olho em nossas novidades!!");
     }
-    if (email == "") {
-        alert ("Ola " + nome + ", por favor preencha o compo email");
-        formnewsletter.email.focus();
-        return false;
-    }
     if (nome == "") {
         alert ("preencha o campo nome");
         formnewsletter.nome.focus();
+        return false;
+    }
+    if (email == "") {
+        alert ("Ola " + nome + ", por favor preencha o compo email");
+        formnewsletter.email.focus();
         return false;
     }
 }
@@ -70,5 +70,17 @@ function formContato() {
         alert("preencha o campo mensagem");
         formcontato.mensagem.focus();
         return false;
+    }
+}
+function abrirModalBusca() {
+    var modal = document.querySelector(".modal-busca");
+    if (modal) {
+        modal.classList.add("abrir");
+    }
+}
+function fecharModalBusca() {
+    var modal = document.querySelector(".modal-busca");
+    if (modal) {
+        modal.classList.remove("abrir");
     }
 }

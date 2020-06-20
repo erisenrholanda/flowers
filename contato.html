@@ -12,8 +12,15 @@
                 <a href="index.html" class="logo"></a>
             </h1>
             <form method="post">
-                <input type="text" placeholder="faça uma busca">
-                <button>+</button>
+                <input type="text" placeholder="faça uma busca" onfocus="abrirModalBusca()">
+                <button onclick="abrirModalBusca()">+</button>
+                <div class="modal-busca">
+                    <div class="modal-busca-wrapper">
+                        <input type="text">
+                        <button type="submit" class="submit">Buscar</button>
+                        <button class="close" onclick="fecharModalBusca()"><svg id="Capa_1" enable-background="new 0 0 512.001 512.001" height="512" viewBox="0 0 512.001 512.001" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m512.001 84.853-84.853-84.853-171.147 171.147-171.148-171.147-84.853 84.853 171.148 171.147-171.148 171.148 84.853 84.853 171.148-171.147 171.147 171.147 84.853-84.853-171.148-171.148z"/></g></svg></button>
+                    </div>
+                </div>
             </form>
         </header>
         <nav class="menu">

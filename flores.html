@@ -12,8 +12,15 @@
                 <a href="index.html" title="Flowers"></a>
             </h1>
             <form method="post">
-                <input type="text" placeholder="faça uma busca">
-                <button>+</button>
+                <input type="text" placeholder="faça uma busca" onfocus="abrirModalBusca()">
+                <button onclick="abrirModalBusca()">+</button>
+                <div class="modal-busca">
+                    <div class="modal-busca-wrapper">
+                        <input type="text">
+                        <button type="submit" class="submit">Buscar</button>
+                        <button class="close" onclick="fecharModalBusca()"><svg id="Capa_1" enable-background="new 0 0 512.001 512.001" height="512" viewBox="0 0 512.001 512.001" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m512.001 84.853-84.853-84.853-171.147 171.147-171.148-171.147-84.853 84.853 171.148 171.147-171.148 171.148 84.853 84.853 171.148-171.147 171.147 171.147 84.853-84.853-171.148-171.148z"/></g></svg></button>
+                    </div>
+                </div>
             </form>
         </header>
         <nav class="menu">
@@ -27,63 +34,63 @@
             <article class="box-23">
                 <div class="caixa">
                     <p class="textgran">Magnólia</p>
-                    <div id="content">
+                    <div class="caixa-interna">
                         <img src="img/magnolia.jpg">
                     </div>
                     <p>E poucas coisas são tão bonitas como uma árvore de magnólia em plena floração. Nomeada após Pierre Magnol, um popular botânico, Magnólia se orgulha de mais de 200 espécies. As flores magnólia vêm em rosa, roxo ou branco, e o tamanho pode ser qualquer entre 3 a 12 polegadas em diâmetro. Esta flor é um símbolo da beleza, doçura e feminilidade. O gênero de magnólia pode ser encontrado em West Indies, sudeste como também leste da Ásia, América Central, América do norte, entre outros lugares.</p>
                 </div>
                 <div class="caixa">
                     <p class="textgran">Lírio d’agua</p>
-                    <div id="content">
+                    <div class="caixa-interna">
                         <img src="img/Lírio d’agua.jpg">
                     </div>
                     <p>Estas flores são incrivelmente lindas que vêm com um tapete flutuante de folhagem. A floração dura cerca de 3 dias e então é substituída. As nenúfares vêm em cores variadas e são muitas vezes perfumadas. Basicamente, há 3 tipos desta flor, Nymphaeaceae ou a nenúfar comum, Nelumbo ou Lotus, e Nuphar Lutea, a flor amarela.</p>
                 </div>
                 <div class="caixa">
                     <p class="textgran">Tulipa</p>
-                    <div id="content">
+                    <div class="caixa-interna">
                         <img src="img/Tulipa-Flor.jpg">
                     </div>
                     <p>Esta planta perene com flores vistosas pertence ao gênero de Tulipa. Da Ásia à África, a tulipa é uma entre as mais cultivadas flores. E várias espécies e híbridos, desta flor excepcionalmente bonita, podem ser vistas em jardim como flores de corte ou como plantas de pote. As tulipas vêm em várias cores, assim como o formato da flor. Há mais de 100 espécies conhecidas desta incrível planta, que é sexta posição nesta seleção, das 10 flores mais bonitas do mundo. </p>
                 </div>
                 <div class="caixa">
                     <p class="textgran">Orquídeas</p>
-                    <div id="content">
+                    <div class="caixa-interna">
                         <img src="img/orquidea.jpg">
                     </div>
                     <p>As orquídeas têm uma quantidade inacreditável de variedades, mais de 25.000 espécies em 800 gêneros. Esta planta pode facilmente se adaptar ao ambiente dela e então é disponível em quase todo o mundo; algumas orquídeas têm 30 polegadas de pétalas e podem pesar cerca de uma 1kg.</p>
                 </div>
                 <div class="caixa">
                     <p class="textgran">Dália</p>
-                    <div id="content">
+                    <div class="caixa-interna">
                         <img src="img/dahlia-frantonio.jpg">
                     </div>
                     <p>Nomeada após Anders Dahl, um botânico, esta planta perene espessa tuberosa é geralmente encontrada no México, Colômbia, e América Central. Esta flor tem mais de 30 espécies. E um detalhe interessante sobre a mesma é que vem em uma variedade enorme de tamanhos. A flor consiste de uma cabeça floral cercada por várias pétalas delicadas. Estas flores vêm em vários tons de laranja, vermelho, rosa, roxo, branco e mais. E foi declarada a flor nacional do México no ano 1963.</p>
                 </div>
                 <div class="caixa">
                     <p class="textgran">Plumeria</p>
-                    <div id="content">
+                    <div class="caixa-interna">
                         <img src="img/Plumeria.jpg">
                     </div>
                     <p>A pluméria que é uma nativa do Brasil, Caribe e América Central, vem em muitas variedades. A flor pertence à família dogbane, Apocynaceae e é conhecida por seu aroma fascinante e beleza. A pluméria tem flores de tamanho médio que vem em uma variedade de cores vibrantes, como rosa, vermelho, amarelo e mais.</p>
                 </div>
                 <div class="caixa">
                     <p class="textgran">Rosa</p>
-                    <div id="content">
+                    <div class="caixa-interna">
                         <img src="img/Rosa.jpg" onclick="trocarimagem()">
                     </div>
                     <p>A rosa é posição líder na seleção das 10 flores mais bonitas do mundo. Trata-se de pequena, de cheiro doce, e tem tudo que é necessário para ser a de maior beleza. E não seria errado dizer que a rosa é sinônimo de beleza e amor. Este arbusto perene arborizado pertence ao gênero Rosa. As rosas são encontradas quase em todos os lugares do planeta. Esta flor linda vem em uma variedade de cor e cada cor possui um significado diferente, por exemplo, a rosa vermelha é um símbolo do amor, enquanto a rosa amarela é da amizade. De poetas a artistas, a rosa tem sido uma fonte de inspiração para as pessoas por séculos.</p>
                 </div>
                 <div class="caixa">
                     <p class="textgran">Copo de leite</p>
-                    <div id="content">
+                    <div class="caixa-interna">
                         <img src="img/copodeleite.jpg">
                     </div>
                     <p>Um símbolo da grandiosidade e beleza, a Calla lily é uma flor extremamente bonita, que é amplamente usada em arranjos florais, buquês e fins de decoração. Estas flores são nativas da África do Sul. E são exclusivamente esculpidas e vem em um número de cores como tons de verde, amarelo, rosa, roxo e mais. A flor copo-de-leite é uma planta ornamental que encanta com suas linhas delicadas, aparência exótica e pétalas aveludadas. Seu nome popular é devido ao seu formato que lembra o de um copo. É uma espécie muito popular e bastante utilizada para decorar ambientes, embelezar eventos e presentear alguém querido.</p>
                 </div>
                 <div class="caixa">
                     <p class="textgran">Flor de Cerejeira</p>
-                    <div id="content">
+                    <div class="caixa-interna">
                         <img src="img/Flor-de-Cerejeira.jpg">
                     </div>
                     <p>O início da floração das cerejeiras marca o fim do inverno e a chegada da primavera. São aguardadas com ansiedade pelos japoneses, que organizam em todo o país diversas festividades em torno do “Hanami” (ato de contemplação das cerejeiras em flor que deixam a paisagem deslumbrante).
