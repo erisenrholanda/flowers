@@ -1,14 +1,4 @@
 // index.html
-async function entrar() {
-    if (entrar <= 1){
-        await sleep(50);
-        alert("seja bem vindo")
-    }
-    if (entrar <= 1)
-    function sleep(ms) {
-        return new Promise(resolve =>setTimeout(resolve, ms));
-    }
-}
 function validar() {
     var nome = formnewsletter.nome.value;
     var email = formnewsletter.email.value;
@@ -34,9 +24,17 @@ function validar() {
     }
 }
 //flores.html
-function trocarimagem() {
-    var troca = document.getElementsByName("troca");
-    troca.src="img/rosa2.jpg";
+function abrirModalBusca() {
+    var modal = document.querySelector(".modal-busca");
+    if (modal) {
+        modal.classList.add("abrir");
+    }
+}
+function fecharModalBusca() {
+    var modal = document.querySelector(".modal-busca");
+    if (modal) {
+        modal.classList.remove("abrir");
+    }
 }
 //contato.html
 function formContato() {
@@ -70,17 +68,5 @@ function formContato() {
         alert("preencha o campo mensagem");
         formcontato.mensagem.focus();
         return false;
-    }
-}
-function abrirModalBusca() {
-    var modal = document.querySelector(".modal-busca");
-    if (modal) {
-        modal.classList.add("abrir");
-    }
-}
-function fecharModalBusca() {
-    var modal = document.querySelector(".modal-busca");
-    if (modal) {
-        modal.classList.remove("abrir");
     }
 }

@@ -91,8 +91,8 @@ p {
 }
 .modal-busca-wrapper .close {
     position: absolute;
-    top: -30px;
-    right: -30px;
+    top: -90px;
+    right: -90px;
     width: 30px;
     height: 30px;
     float: right;
@@ -107,6 +107,9 @@ p {
 .modal-busca-wrapper .close svg {
     width: 100%;
     height: 100%;
+}
+.modal-busca-wrapper .close svg path {
+    fill: white;
 }
 /* Menu */
 .menu {
